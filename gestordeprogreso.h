@@ -2,9 +2,10 @@
 #include<iostream>
 #include<fstream>
 #include<filesystem>
-namespace fs = std::filesystem;
+#include <string>
 #pragma once
 //#define SAVEFILE_URL = "./progress.json"
+using namespace std;
 
 struct ProgressState {
 	char key;
@@ -13,7 +14,7 @@ struct ProgressState {
 
 class ProgressController
 {
-	std::ofstream progressFile;
+	ofstream progressFile;
 	ProgressState progressState[4]{
 		'W', 0,
 		'A', 0,

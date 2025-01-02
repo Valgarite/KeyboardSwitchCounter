@@ -1,6 +1,6 @@
+#include <string>
 #include "gestordeprogreso.h"
 using namespace std;
-namespace fs = std::filesystem;
 
 ProgressController::ProgressController() {
 	ifstream readFile;
